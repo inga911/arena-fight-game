@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <h2 class="title-player">Player</h2>
+      <div class="player">
+        <img
+          src="https://static.miraheze.org/greatcharacterswiki/2/2d/PoPanda.png
+          "
+          alt=""
+        />
+        <div class="hp">
+          <div id="playerHP" class="over-hp">
+            <span id="resultPlayer">100 </span>/100
+          </div>
+        </div>
+      </div>
+
+      <div class="potion">
+        <div class="info">Get +100hp</div>
+        <img
+          src="https://images.vexels.com/media/users/3/241896/isolated/preview/9bc720bdc5252e9b6df48b512f2b0bc5-bottle-with-blue-potion-semi-flat.png"
+          alt=""
+        />
+        <button id="potion">Buy -50 gold</button>
+      </div>
+      <div class="gold-atack">
+        <h2 class="gold-atack">gold won: <span id="goldWon"></span></h2>
+        <button id="atackBtn">Atack</button>
+      </div>
+
+      <h2 class="title-enemy">Enemy</h2>
+      <div class="enemy">
+        <img
+          id="enemyImg"
+          src="https://i.ytimg.com/vi/gDrCuk9rle8/maxresdefault.jpg"
+          alt=""
+        />
+        <div class="hp">
+          <div id="enemyHP" class="over-hp" style="width: 100%">
+            <span id="resultEnemy">100 </span>/100
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
