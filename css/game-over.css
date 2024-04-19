@@ -1,0 +1,16 @@
+.game-over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  height: 400px;
+  width: 70%;
+  margin-top: 100px;
+}
+
+.game-over > h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}

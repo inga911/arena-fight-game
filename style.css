@@ -1,22 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
 body {
-  background-color: midnightblue;
+  background-color: rgb(17, 17, 63);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: monospace;
+  font-family: "Electrolize", sans-serif;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
-.main {
-  background-color: rgb(12, 12, 12);
-  height: 60vh;
+/* .main {
+  background-color: rgb(0, 0, 0);
+  height: 80vh;
   width: 90%;
-  margin-top: 100px;
+  margin-top: 70px;
   border-radius: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.all {
+  background-color: aqua;
+}
+
+.upgrades {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.upgrades > img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.upgrades > img:hover {
+  transform: scale(1.07);
+  cursor: pointer;
 }
 
 .player,
@@ -28,9 +55,32 @@ body {
   position: absolute;
   border-radius: 10px;
   border: 1px solid white;
-  overflow: hidden;
 }
-img {
+.player-img {
+  height: 70%;
+}
+.enemy-img {
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.player-img > .start-img,
+.enemy-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  background-color: white;
+}
+.player5 {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+.enemy-img {
   width: 100%;
   height: 70%;
   object-fit: cover;
@@ -60,7 +110,7 @@ img {
   height: 50px;
   width: 80%;
   border: 1px solid black;
-  margin: 50px auto;
+  margin: 20px auto;
   border-radius: 5px;
   background-color: aliceblue;
   overflow: hidden;
@@ -113,7 +163,7 @@ button:active {
   border: none;
   padding: 7px;
   border-radius: 5px;
-}
+} */
 
 .info {
   color: whitesmoke;
@@ -127,3 +177,86 @@ button:active {
   cursor: default;
   transform: translateY(0);
 }
+
+.d-none {
+  display: none !important;
+}
+/* 
+.start-img {
+  width: 100px;
+  height: 100px;
+}
+
+.game-start {
+  height: 80vh;
+  width: 80vw;
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+.game-start > h1 {
+  letter-spacing: 3px;
+}
+
+.start-images {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.start-images > img {
+  height: 90%;
+  width: 20%;
+  gap: 20px;
+  transition: all 0.1s;
+  border-radius: 3px;
+  object-fit: cover;
+}
+.start-images > img:hover {
+  cursor: pointer;
+  transform: translateY(-15px);
+  box-shadow: 0 10px 10px rgba(243, 239, 239, 0.504);
+}
+.start-images > img:active {
+  cursor: pointer;
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
+.start-btn {
+  background-color: rgb(216, 241, 241);
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: black;
+  padding: 7px 10px;
+  border-radius: 2px;
+}
+
+.start-btn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+.start-btn:active {
+  transform: translateY(0px);
+} */
+
+/* .game-over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  height: 400px;
+  width: 70%;
+  margin-top: 100px;
+}
+
+.game-over > h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+} */

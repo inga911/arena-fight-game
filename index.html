@@ -12,20 +12,80 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/start-game.css" />
+    <link rel="stylesheet" href="css/game-over.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="main">
+    <div id="gameStart" class="game-start">
+      <h1>Choose your player</h1>
+      <div class="start-images">
+        <img
+          id="player1"
+          class="start-img"
+          src="https://cdnb.artstation.com/p/assets/images/images/025/801/099/original/jean-baptiste-couche-old-pixelart.gif?1586964138"
+          alt=""
+        />
+        <img
+          id="player2"
+          class="start-img"
+          src="https://i.pinimg.com/originals/a3/2b/aa/a32baaa4864a8bf5775932a17f8bdb9d.gif"
+          alt=""
+        />
+        <img
+          id="player3"
+          class="start-img"
+          src="https://ih1.redbubble.net/image.1973475148.8813/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+          alt=""
+        />
+        <img
+          id="player4"
+          class="start-img"
+          src="https://preview.redd.it/ad5pjhf1jfu81.gif?width=610&auto=webp&s=4530569792c8f3fc31611ffd37ac918c6f97a4d1"
+          alt=""
+        />
+        <img
+          class="player5"
+          id="player5"
+          src="https://www.siliconrepublic.com/wp-content/uploads/2016/03/pixel-art-einstein-science-kombat-diego-sanches.gif"
+          alt=""
+        />
+      </div>
+      <button id="gameStartBtn" class="start-btn">Start game</button>
+    </div>
+
+    <div id="main" class="main">
       <h2 class="title-player">Player</h2>
       <div class="player">
-        <img
+        <div id="mainPlayerImg" class="player-img"></div>
+        <!-- <img
+          id="mainPlayerImg"
           src="https://static.miraheze.org/greatcharacterswiki/2/2d/PoPanda.png
           "
           alt=""
-        />
+        /> -->
         <div class="hp">
           <div id="playerHP" class="over-hp">
-            <span id="resultPlayer">100 </span>/100
+            <span id="resultPlayer" class="hp-result">100 / 100%</span>
+
+            <div class="upgrades">
+              <img
+                id="sword"
+                src="https://static.vecteezy.com/system/resources/previews/009/726/219/non_2x/pixel-art-link-sword-item-for-game-8bit-on-white-background-vector.jpg"
+                alt=""
+              />
+              <img
+                id="bow"
+                src="https://cdnb.artstation.com/p/assets/images/images/046/014/633/large/ege-pehlivanoglu-resim-2022-02-05-233119.jpg?1644093078"
+                alt=""
+              />
+              <img
+                id="magicWand"
+                src="https://us.123rf.com/450wm/captainvector/captainvector2208/captainvector220801289/189704825-pixel-art-magic-wand.jpg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -33,29 +93,44 @@
       <div class="potion">
         <div class="info">Get +100hp</div>
         <img
+          class="potion"
           src="https://images.vexels.com/media/users/3/241896/isolated/preview/9bc720bdc5252e9b6df48b512f2b0bc5-bottle-with-blue-potion-semi-flat.png"
           alt=""
         />
         <button id="potion">Buy -50 gold</button>
       </div>
       <div class="gold-atack">
-        <h2 class="gold-atack">gold won: <span id="goldWon"></span></h2>
+        <h2 class="gold-atack">gold won: <span id="goldWon">0</span></h2>
         <button id="atackBtn">Atack</button>
       </div>
 
+      <!-- console -->
+      <div style="color: white; font-size: 20px; width: 150px">
+        Cia bus ataku resultatai bei kiek nukove priesu playeris
+      </div>
+      <!-- console -->
+
       <h2 class="title-enemy">Enemy</h2>
       <div class="enemy">
-        <img
+        <div id="enemyImg" class="enemy-img"></div>
+        <!-- <img
+          class="enemy-img"
           id="enemyImg"
           src="https://i.ytimg.com/vi/gDrCuk9rle8/maxresdefault.jpg"
           alt=""
-        />
+        /> -->
         <div class="hp">
           <div id="enemyHP" class="over-hp" style="width: 100%">
-            <span id="resultEnemy">100 </span>/100
+            <span id="resultEnemy">100 / 100% </span>
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="gameOver" class="game-over">
+      <h1>Game Over</h1>
+      <span id="gameResult"></span>
+      <button id="gameOverBtn">Play Again</button>
     </div>
   </body>
 </html>
