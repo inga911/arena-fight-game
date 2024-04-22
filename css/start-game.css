@@ -1,7 +1,6 @@
 .game-start {
   height: 80vh;
   width: 80vw;
-  /* background-color: black; */
   margin-top: 5vw;
   display: flex;
   justify-content: center;
@@ -41,8 +40,6 @@
 }
 
 .start-btn {
-  /* width: 100px;
-    height: 20px; */
   background-color: rgb(216, 241, 241);
   font-size: 30px;
   letter-spacing: 2px;

@@ -11,6 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/start-game.css" />
     <link rel="stylesheet" href="css/game-over.css" />
@@ -18,6 +22,11 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- VOLUME BUTTON -->
+    <button class="volume-button">
+      <span id="volume" class="material-symbols-outlined"> volume_up </span>
+    </button>
+    <!-- GAME START -->
     <div id="gameStart" class="game-start">
       <h1>Choose your player</h1>
       <div class="start-images">
@@ -36,7 +45,7 @@
         <img
           id="player3"
           class="start-img"
-          src="https://ih1.redbubble.net/image.1973475148.8813/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+          src="https://media.tenor.com/CQlfSWmrwjgAAAAi/patrick-patrick-the-star.gif"
           alt=""
         />
         <img
@@ -56,19 +65,13 @@
     </div>
 
     <div id="main" class="main">
+      <!-- PLAYER -->
       <h2 class="title-player">Player</h2>
       <div class="player">
         <div id="mainPlayerImg" class="player-img"></div>
-        <!-- <img
-          id="mainPlayerImg"
-          src="https://static.miraheze.org/greatcharacterswiki/2/2d/PoPanda.png
-          "
-          alt=""
-        /> -->
         <div class="hp">
           <div id="playerHP" class="over-hp">
             <span id="resultPlayer" class="hp-result">100 / 100%</span>
-
             <div class="upgrades">
               <img
                 id="sword"
@@ -89,7 +92,7 @@
           </div>
         </div>
       </div>
-
+      <!-- POTION -->
       <div class="potion">
         <div class="info">Get +100hp</div>
         <img
@@ -104,21 +107,24 @@
         <button id="atackBtn">Atack</button>
       </div>
 
-      <!-- console -->
-      <div style="color: white; font-size: 20px; width: 150px">
-        Cia bus ataku resultatai bei kiek nukove priesu playeris
-      </div>
-      <!-- console -->
+      <!-- CONSOLE -->
+      <div
+        id="consoleResult"
+        style="
+          color: white;
+          font-size: 17px;
+          width: 270px;
+          margin-top: 20px;
+          height: 200px;
+          overflow-y: scroll;
+          margin-bottom: 20px;
+        "
+      ></div>
 
+      <!-- ENEMY -->
       <h2 class="title-enemy">Enemy</h2>
       <div class="enemy">
         <div id="enemyImg" class="enemy-img"></div>
-        <!-- <img
-          class="enemy-img"
-          id="enemyImg"
-          src="https://i.ytimg.com/vi/gDrCuk9rle8/maxresdefault.jpg"
-          alt=""
-        /> -->
         <div class="hp">
           <div id="enemyHP" class="over-hp" style="width: 100%">
             <span id="resultEnemy">100 / 100% </span>
@@ -126,7 +132,7 @@
         </div>
       </div>
     </div>
-
+    <!-- GAME OVER -->
     <div id="gameOver" class="game-over">
       <h1>Game Over</h1>
       <span id="gameResult"></span>
