@@ -70,9 +70,10 @@
   width: 90%;
   margin: 20px auto;
   border-radius: 2px;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: white;
 }
+
 .over-hp {
   transition: all 0.3s ease-in-out;
   height: 100%;
@@ -83,6 +84,10 @@
   font-weight: 600;
 }
 
+.over-hp > .hp-result {
+  position: absolute !important;
+  right: 20px;
+}
 .gold-attack {
   display: flex;
   flex-direction: column;
