@@ -83,7 +83,7 @@
   font-weight: 600;
 }
 
-.gold-atack {
+.gold-attack {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,13 +91,13 @@
   width: 200px;
 }
 
-.gold-atack h2 {
+.gold-attack h2 {
   color: gold;
   display: inline;
   text-align: center;
 }
 
-.gold-atack button {
+.gold-attack button {
   margin-top: 10px;
   width: 100px;
   padding: 10px;

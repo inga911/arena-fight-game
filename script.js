@@ -1,5 +1,5 @@
 const goldWon = document.getElementById('goldWon')
-const atackBtn = document.getElementById('atackBtn')
+const attackBtn = document.getElementById('attackBtn')
 const playerHP = document.getElementById('playerHP')
 const enemyHP = document.getElementById('enemyHP')
 const potion = document.getElementById('potion')
@@ -171,7 +171,7 @@ function updateHtmlPlayer() {
     playerHP.style.backgroundColor = 'lightgreen'
 }
 
-atackBtn.onclick = () => {
+attackBtn.onclick = () => {
     sound(hoverSound)
     const playerDamage = random(12);
     let enemyDamage = random(8);
